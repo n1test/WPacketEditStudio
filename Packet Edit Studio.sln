@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PEStudio", "PEStudio\PEStudio.vcproj", "{1C6425A7-EE8A-4232-851D-C79E60798405}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PEStudioDll", "PEStudioDll\PEStudioDll.vcproj", "{DFF3F4B2-37C4-44BD-83EF-FB91E48D82FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C6425A7-EE8A-4232-851D-C79E60798405}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C6425A7-EE8A-4232-851D-C79E60798405}.Debug|Win32.Build.0 = Debug|Win32
+		{1C6425A7-EE8A-4232-851D-C79E60798405}.Release|Win32.ActiveCfg = Release|Win32
+		{1C6425A7-EE8A-4232-851D-C79E60798405}.Release|Win32.Build.0 = Release|Win32
+		{DFF3F4B2-37C4-44BD-83EF-FB91E48D82FE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DFF3F4B2-37C4-44BD-83EF-FB91E48D82FE}.Debug|Win32.Build.0 = Debug|Win32
+		{DFF3F4B2-37C4-44BD-83EF-FB91E48D82FE}.Release|Win32.ActiveCfg = Release|Win32
+		{DFF3F4B2-37C4-44BD-83EF-FB91E48D82FE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,856 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\PEStudio.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PEStudio.ico"
+IDR_PHPDOCUMENT         ICON                    "res\\phpdoc\\php.ico"
+IDR_RESULTSDOCUMENT     ICON                    "res\\resultsdoc\\results.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_SNIFFTOOL           BITMAP                  "res\\Toolbar.bmp"
+IDR_SNIFFERBAR          BITMAP                  "res\\Toolbar.bmp"
+IDR_ACTIONBAR           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME24         BITMAP                  "res\\mainwindow\\DocToolbar.bmp"
+IDR_SNIFFTOOL24         BITMAP                  "res\\mainwindow\\SniffBar.bmp"
+IDR_SNIFFERBAR24        BITMAP                  "res\\snifferbar\\SnifferBar.bmp"
+IDB_ACTIONBAR24         BITMAP                  "res\\actionbar\\ActionBar.bmp"
+IDR_NOTFOUNDICO         BITMAP                  "res\\openprocdlg\\notfound.bmp"
+IDB_TABIMAGES           BITMAP                  "res\\tabbedbar\\icons.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_SNIFFTOOL TOOLBAR  25, 31
+BEGIN
+    BUTTON      ID_OPEN_PROCESS
+    BUTTON      ID_TRACE_CONSOLE
+    BUTTON      ID_ACTIONS_CONSOLE
+    BUTTON      ID_DATASCRIPTS
+    BUTTON      ID_FINDDATABUFFER
+    BUTTON      ID_CALCULATOR
+    BUTTON      ID_TOOLS_OPTIONS
+END
+
+IDR_SNIFFERBAR TOOLBAR  24, 23
+BEGIN
+    BUTTON      ID_SNIFFER_START
+    BUTTON      ID_SNIFFER_PAUSE
+    BUTTON      ID_SNIFFER_STOP
+END
+
+IDR_ACTIONBAR TOOLBAR  24, 23
+BEGIN
+    BUTTON      ID_SCRIPTS_START
+    BUTTON      ID_SCRIPTS_STOP
+    BUTTON      ID_SCRIPTS_ADD
+    BUTTON      ID_SCRIPTS_DELETE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Main Toolbar",                ID_VIEW_MAINTOOLBAR
+        MENUITEM "Editer Toolbar",              ID_VIEW_TOOLBAR
+        MENUITEM "Trace Console",               ID_VIEW_TRACECONSOLE
+        MENUITEM "Actions Console",             ID_VIEW_ACTIONSCONSOLE
+        MENUITEM "Calculator",                  ID_VIEW_CALCULATOR
+        MENUITEM "Results Window",              ID_VIEW_RESULTS_WINDOW
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Options",                     ID_TOOLS_OPTIONS
+        MENUITEM "Add PHP Script",              ID_TOOLS_APPLYDATAMETHOD
+        MENUITEM "Find Static Buffer",          ID_TOOLS_FINDSTATICBUFFER
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Packet Edit Studio...", ID_APP_ABOUT
+    END
+END
+
+IDR_PHPDOCUMENT MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Main Toolbar",                ID_VIEW_MAINTOOLBAR
+        MENUITEM "Editer Toolbar",              ID_VIEW_TOOLBAR
+        MENUITEM "Trace Console",               ID_VIEW_TRACECONSOLE
+        MENUITEM "Actions Console",             ID_VIEW_ACTIONSCONSOLE
+        MENUITEM "Calculator",                  ID_VIEW_CALCULATOR
+        MENUITEM "Results Window",              ID_VIEW_RESULTS_WINDOW
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Options",                     ID_TOOLS_OPTIONS
+        MENUITEM "Add PHP Script",              ID_TOOLS_APPLYDATAMETHOD
+        MENUITEM "Find Static Buffer",          ID_TOOLS_FINDSTATICBUFFER
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Packet Edit Studio...", ID_APP_ABOUT
+    END
+END
+
+IDR_RESULTSDOCUMENT MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Main Toolbar",                ID_VIEW_MAINTOOLBAR
+        MENUITEM "Editer Toolbar",              ID_VIEW_TOOLBAR
+        MENUITEM "Trace Console",               ID_VIEW_TRACECONSOLE
+        MENUITEM "Actions Console",             ID_VIEW_ACTIONSCONSOLE
+        MENUITEM "Calculator",                  ID_VIEW_CALCULATOR
+        MENUITEM "Results Window",              ID_VIEW_RESULTS_WINDOW
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Options",                     ID_TOOLS_OPTIONS
+        MENUITEM "Add PHP Script",              ID_TOOLS_APPLYDATAMETHOD
+        MENUITEM "Find Static Buffer",          ID_TOOLS_FINDSTATICBUFFER
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Packet Edit Studio...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 53
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Packet Edit Studio"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "Packet Edit Studio Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008 Chris Smith",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_METERBOX DIALOGEX 0, 20, 158, 71
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BUFFERMETER,"Static",SS_BLACKFRAME | SS_SUNKEN,5,2,71,67,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    CONTROL         "",IDC_PACKETMETER,"Static",SS_BLACKFRAME | SS_SUNKEN,79,2,71,67,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+END
+
+IDD_SELECTPROCESS DIALOGEX 0, 0, 362, 234
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Slect Process"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,298,206,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,241,207,50,14
+    CONTROL         "",IDC_PROCESSLIST,"SysListView32",LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,22,19,122,194
+    GROUPBOX        "Process",IDC_STATIC,15,7,137,213
+    GROUPBOX        "Process Information",IDC_STATIC,187,23,158,175
+    LTEXT           "Process Name:",IDC_STATIC,199,38,48,8
+    LTEXT           "PID:",IDC_STATIC,199,52,15,8
+    LTEXT           "EXE Size:",IDC_STATIC,199,65,30,8
+    LTEXT           "User:",IDC_STATIC,199,80,18,8
+    GROUPBOX        "Associated Windows",IDC_STATIC,197,109,137,81
+    LISTBOX         IDC_PS_WINDOWS,205,123,122,61,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_PID,256,53,77,8,SS_NOTIFY
+    LTEXT           "",IDC_EXE_SZ,256,65,77,9,SS_NOTIFY
+    LTEXT           "",IDC_PROCESS_NAME,256,39,77,8,SS_NOTIFY
+    LTEXT           "",IDC_USER,255,79,78,8,SS_NOTIFY
+    LTEXT           "OpenProcess:",IDC_STATIC,200,93,46,8
+    LTEXT           "",IDC_OPENPROCESS_STATE,255,92,77,9,SS_NOTIFY
+END
+
+IDD_CONSOLE DIALOGEX 0, 0, 161, 107
+STYLE DS_SETFONT | WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 272, 242
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Apply",IDC_OPTIONS_OK,217,220,50,14
+    PUSHBUTTON      "Cancel",IDC_OPTIONS_CANCEL,155,220,50,14
+    GROUPBOX        "",IDC_STATIC,0,1,271,241
+END
+
+IDD_CALCULATOR DIALOGEX 0, 0, 73, 175
+STYLE DS_SETFONT | WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "D",IDC_CALC_D,3,27,12,11
+    DEFPUSHBUTTON   "E",IDC_CALC_E,19,27,12,11
+    DEFPUSHBUTTON   "F",IDC_CALC_F,35,27,12,11
+    DEFPUSHBUTTON   "A",IDC_CALC_A,3,41,12,11,WS_DISABLED
+    DEFPUSHBUTTON   "B",IDC_CALC_B,19,41,12,11
+    DEFPUSHBUTTON   "C",IDC_CALC_C,35,41,12,11
+    DEFPUSHBUTTON   "7",IDC_CALC_7,3,55,12,11
+    DEFPUSHBUTTON   "8",IDC_CALC_8,19,55,12,11
+    DEFPUSHBUTTON   "9",IDC_CALC_9,35,55,12,11
+    DEFPUSHBUTTON   "4",IDC_CALC_4,3,68,12,11
+    DEFPUSHBUTTON   "5",IDC_CALC_5,19,68,12,11
+    DEFPUSHBUTTON   "6",IDC_CALC_6,35,68,12,11
+    DEFPUSHBUTTON   "1",IDC_CALC_1,3,81,12,11
+    DEFPUSHBUTTON   "2",IDC_CALC_2,19,81,12,11
+    DEFPUSHBUTTON   "3",IDC_CALC_3,35,81,12,11
+    DEFPUSHBUTTON   "<-",IDC_CALC_BACKSPACE,3,94,12,11
+    DEFPUSHBUTTON   "0",IDC_CALC_0,19,94,12,11
+    DEFPUSHBUTTON   "Cl",IDC_CALC_CLEAR,57,27,12,11
+    DEFPUSHBUTTON   "+",IDC_CALC_PLUS,57,41,12,11
+    DEFPUSHBUTTON   "-",IDC_CALC_MINUS,57,54,12,11
+    DEFPUSHBUTTON   "x",IDC_CALC_TIMES,57,67,12,11
+    DEFPUSHBUTTON   "/",IDC_CALC_DEVIDE,57,81,12,11
+    DEFPUSHBUTTON   "=",IDC_CALC_EQUALS,57,94,12,11
+    LISTBOX         IDC_CALC_TOPLIST,5,5,63,9,LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_DISABLED | NOT WS_BORDER | WS_TABSTOP
+    GROUPBOX        "",IDC_CALC_BOX,4,0,66,24,BS_FLAT
+    GROUPBOX        "Size",IDC_CALC_SIZEBOX,2,135,64,39
+    GROUPBOX        "View",IDC_CALC_VIEWBOX,2,106,64,26
+    EDITTEXT        IDC_CALC_BOTTOMLIST,5,11,63,12,ES_RIGHT | ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "B",IDC_CALC_BIN,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,117,10,10
+    CONTROL         "O",IDC_CALC_OCT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,21,117,10,10
+    CONTROL         "D",IDC_CALC_DEC,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,35,117,10,10
+    CONTROL         "H",IDC_CALC_HEX,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,50,117,10,10
+    CONTROL         "16bit",IDC_CALC_SIXTEENBIT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,36,145,25,10
+    CONTROL         "8bit",IDC_CALC_EIGHTBIT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,6,145,25,10
+    CONTROL         "32bit",IDC_CALC_THIRTYTWOBIT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,6,159,26,10
+    CONTROL         "64bit",IDC_CALC_SIXTYFOURBIT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,36,159,25,10
+END
+
+IDD_SNIFFINGOPS DIALOGEX 15, 25, 223, 166
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Dll Name:",IDC_STATIC,18,14,31,8
+    EDITTEXT        IDC_DLLNAMEEDIT,93,11,113,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SNIFFMETHODBOX,93,32,114,127,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Interception Method:",IDC_STATIC,17,34,69,8
+    LTEXT           "Buffer Size:",IDC_STATIC,18,55,38,8
+    CONTROL         "",IDC_BUFFERSIZESLIDE,"msctls_trackbar32",TBS_BOTH | WS_TABSTOP,91,60,116,10
+    LTEXT           "100",IDC_BIFFERSIZELOW,92,52,13,8
+    LTEXT           "1 Gb",IDC_BIFFERSIZELOW2,191,53,16,8
+    CTEXT           "Static",IDC_BUFFERSIZETXT,96,77,107,14,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "(bytes)",IDC_STATIC,23,64,24,8
+    CTEXT           "Max Packet: (bytes)",IDC_STATIC,18,106,40,18
+    CONTROL         "",IDC_PACKETSIZESLIDER,"msctls_trackbar32",TBS_BOTH | WS_TABSTOP,91,106,116,10
+    CTEXT           "Static",IDC_PACKETSIZETEXT,96,123,107,14,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "100",IDC_BIFFERSIZELOW3,93,98,13,8
+    LTEXT           "10 kb",IDC_BUFFERMETER,192,99,18,8
+END
+
+IDD_SNIFFDETAILS DIALOGEX 0, 20, 158, 70
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Send:",IDC_STATIC,7,7,63,11,0,WS_EX_CLIENTEDGE
+    LTEXT           "Recv:",IDC_STATIC,7,20,64,13,0,WS_EX_CLIENTEDGE
+    LTEXT           "WSASend:",IDC_STATIC,7,36,64,13,0,WS_EX_CLIENTEDGE
+    LTEXT           "WSARecv:",IDC_STATIC,7,51,64,12,0,WS_EX_CLIENTEDGE
+    LTEXT           "SendTo:",IDC_STATIC,79,7,72,11,0,WS_EX_CLIENTEDGE
+    LTEXT           "RecvFrom:",IDC_STATIC,79,20,72,13,0,WS_EX_CLIENTEDGE
+    CONTROL         "WSARecvFrom:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,79,51,72,12,WS_EX_CLIENTEDGE
+    LTEXT           "WSASendTo:",IDC_STATIC,79,36,72,12,0,WS_EX_CLIENTEDGE
+    LTEXT           "0",IDC_SENDCALLS,50,8,8,8
+    LTEXT           "0",IDC_RECVCALLS,50,24,8,8
+    LTEXT           "0",IDC_WSASENDCALLS,50,40,8,8
+    LTEXT           "0",IDC_WSARECVCALLS,50,54,8,8
+    LTEXT           "0",IDC_SENDTOCALLS,133,8,18,9
+    LTEXT           "0",IDC_RECVFROMCALLS,133,22,18,8
+    LTEXT           "0",IDC_WSASENDTOCALLS,133,38,18,8
+    LTEXT           "0",IDC_WSARECVFROMCALLS,133,54,16,8
+END
+
+IDD_SNIFFSTATS DIALOGEX 0, 20, 158, 70
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Avg Size(b):",-1,7,7,144,11,0,WS_EX_CLIENTEDGE
+    LTEXT           "Sum Recvd(p):",-1,7,21,144,13,0,WS_EX_CLIENTEDGE
+    LTEXT           "Sum Sent(p):",-1,7,36,144,13,0,WS_EX_CLIENTEDGE
+    LTEXT           "Total(b):",-1,7,51,144,12,0,WS_EX_CLIENTEDGE
+    LTEXT           "0",IDC_AVGSIZE,131,8,8,8
+    LTEXT           "0",IDC_TOTALRECVED,131,23,8,8
+    LTEXT           "0",IDC_TOTALSENT,131,40,8,8
+    LTEXT           "0",IDC_TOTALBYTES,131,53,8,8
+END
+
+IDD_SNIFFACTIVITY DIALOGEX 0, 20, 158, 70
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_ACTIVITYGRAPH,
+                    "{C9FE01C2-2746-479B-96AB-E0BE9931B018}",WS_TABSTOP,0,0,157,70
+END
+
+IDD_SNIFFLOG DIALOGEX 0, 20, 158, 70
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LOGLISTBOX,0,0,157,70,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SCRIPTSDLG DIALOGEX 0, 20, 158, 70
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_SCRIPTLISTBOX,1,1,157,69,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PHPOPS DIALOGEX 15, 25, 223, 166
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Parser Version:",-1,18,14,50,8
+    COMBOBOX        IDC_PHPVERSIONBOX,93,12,114,127,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Save Output Files:",-1,17,34,60,8
+    CONTROL         "",IDC_PHPSAVECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,93,33,16,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Source-Magik"
+            VALUE "FileDescription", "Packet Edit Studio"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PEStudio.exe"
+            VALUE "LegalCopyright", "(c) Chris Devereaux.  All rights reserved."
+            VALUE "OriginalFilename", "PEStudio.exe"
+            VALUE "ProductName", "Packet Edit Studio"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 46
+    END
+
+    IDD_METERBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 157
+    END
+
+    IDD_SELECTPROCESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_SNIFFINGOPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_SNIFFDETAILS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_SNIFFSTATS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_SNIFFACTIVITY, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+    END
+
+    IDD_PHPOPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SNIFFACTIVITY DLGINIT
+BEGIN
+    IDC_ACTIVITYGRAPH, 0x376, 300, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x1864, 0x0000, 0x0bc8, 0x0000, 0x00c2, 
+0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0200, 0x0000, 0x0000, 
+0xff00, 0xffff, 0xff00, 0xffff, 0x0000, 0x0000, 0x8000, 0x8080, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0xff00, 0xffff, 0x0200, 0x6725, 0x2502, 0x0167, 0x0001, 0x0000, 
+0x0100, 0x7c01, 0x00fc, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0900, 0x6c45, 0x6d65, 0x6e65, 0x2d74, 0x0030, 0x0000, 
+0x0000, 0xffff, 0x00ff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0101, 0x0300, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 
+0x00aa, 0xb84b, 0x0151, 0x0000, 0x9000, 0x4401, 0x0142, 0x0500, 0x7241, 
+0x6169, 0xff6c, 0x0300, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 
+0xb84b, 0x0151, 0x0000, 0x9000, 0xdc01, 0x017c, 0x0500, 0x7241, 0x6169, 
+0x006c, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 
+0x0001, 0x0000, 0x0190, 0x4244, 0x0001, 0x4105, 0x6972, 0x6c61, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, 0x0000, 0x5204, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 
+0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+	IDP_SCINTILLA_INIT_FAILED     "Scintilla initialization failed.  Make sure that you have SciLexer.dll in the program directory."
+	IDP_CONTROLS_INIT_FAILED     "Controls initialization failed.  Try running the program on a newer version of windows.."
+	IDP_RICHEDIT_INIT_FAILED     "Richedit control version 1 could not be loaded."
+	IDP_PHPDOC_INIT_FAILED     "Failed to create a PHP document modal."
+	IDP_RESULTSDOC_INIT_FAILED     "Failed to create a sniff results document modal."
+	IDP_MAIN_INIT_FAILED     "Could not create the main window."
+	IDP_ARGS_INIT_FAILED     "Failed to parse the command line."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Packet Edit Studio"
+    IDR_PHPDOCUMENT         "\nPHP Script\nPHP Script\nPHP Script files (*.php;*.php4;*.php5;*.inc )\n.php\npacketeditstudio.php\npacketeditstudio.php"
+    IDR_RESULTSDOCUMENT     "\n"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Packet Edit Studio"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLS_OPTIONS        "Preferances\nPreferances"
+    ID_OPEN_PROCESS         "Target Program\nTarget Program"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TRACE_CONSOLE        "Trace Console\nTrace Console"
+    ID_ACTIONS_CONSOLE      "Actions Console\nActions Console"
+    ID_DATASCRIPTS          "Apply Packet Edit Studio Script\nApply Packet Edit Studio Script"
+    ID_FINDDATABUFFER       "Search the target process for the recieve buffer\nSearch the target process for the recieve buffer"
+    ID_CALCULATOR           "Calculator\nCalculator"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SNIFFER_START        "Start Sniffing\nStart Sniffing"
+    ID_SNIFFER_PAUSE        "Pause Sniffing\nPause Sniffing"
+    ID_SNIFFER_STOP         "Stop Sniffing\nStop Sniffing"
+    ID_SCRIPTS_START        "Apply Selected Scripts\nApply Selected Scripts"
+    ID_SCRIPTS_STOP         "Stop Scripts\nStop Scripts"
+    ID_SCRIPTS_ADD          "Add Script\nAdd Script"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SCRIPTS_DELETE       "Remove Script\nRemove Script"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\PEStudio.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
